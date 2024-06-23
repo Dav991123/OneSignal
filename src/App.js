@@ -9,7 +9,11 @@ function App() {
       appId: "75f26761-cd6f-457d-a5ef-a482853c089a",
       allowLocalhostAsSecureOrigin: true,
       apiKey: 'OWRkOTc4YzgtZjM5NS00MGU2LWFiNDMtNWMxMWZkNmEyNzJj', 
-    });
+    })
+    .then(() => {
+      OneSignal.Notifications.requestPermission();
+      console.log('OneSignal.Notifications.requestPermission();')
+    })
   }, []);
  
   return (
