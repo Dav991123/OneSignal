@@ -10,7 +10,7 @@ function App() {
       apiKey: 'OWRkOTc4YzgtZjM5NS00MGU2LWFiNDMtNWMxMWZkNmEyNzJj', 
     })
     .then(() => {
-      OneSignal.Notifications.requestPermission();
+      // OneSignal.Notifications.requestPermission();
       console.log('OneSignal.Notifications.requestPermission();')
     })
   }, []);
